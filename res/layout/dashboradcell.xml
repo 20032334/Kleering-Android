@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#ffffffff" android:paddingBottom="16dp">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/currency" android:layout_marginLeft="16dp" android:textSize="12dp"
+            android:layout_marginTop="16dp" android:textColor="#ffaaaaaa"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="lock"
+            android:id="@+id/lockamount" android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+            android:gravity="right" android:layout_marginRight="16dp" android:textSize="12dp"
+            android:layout_marginTop="16dp" android:textColor="#ffaaaaaa"/>
+    <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:id="@+id/currencyIV" android:layout_below="@+id/currency" android:layout_alignLeft="@+id/currency"
+            android:layout_marginTop="16dp" android:background="#ffffdd7d" android:layout_marginLeft="16dp"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/balance" android:layout_alignTop="@+id/currencyIV"
+            android:layout_alignBottom="@+id/currencyIV"
+            android:gravity="right" android:textSize="32dp"
+            android:layout_alignParentRight="true" android:layout_alignParentLeft="true"
+            android:layout_marginRight="16dp" android:textColor="#ffaaaaaa"/>
+</RelativeLayout>
